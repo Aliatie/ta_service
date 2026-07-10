@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Place Your Order | TA SERVICES</title>
+
+  <!-- Order Page CSS -->
+  <link rel="stylesheet" href="order2.css">
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+  >
+</head>
+
+<body style="background-color: black;">
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="logo_no_r.png" alt="TA SERVICES Logo">
+      </a>
+
+      <button
+        class="navbar-toggler bg-light"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#orderMenu"
+        aria-controls="orderMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="orderMenu"
+      >
+        <ul class="navbar-nav align-items-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="../mainpage/index.html">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="order.html">
+              Order Now
+            </a>
+          </li>
+
+          <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
+            <a
+              href="https://wa.me/96181573590"
+              target="_blank"
+              class="btn-nav"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              Contact Us
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- =========================
+       ORDER SECTION
+  ========================== -->
+
+  <main class="order-page">
+
+    <div class="container">
+
+      <div class="order-heading">
+
+        <span class="subtitle">
+          FAST & EASY ORDER
+        </span>
+
+        <h1 style="color: var(--white); font-size: 3rem; line-height: 1.2;">
+          Place Your
+          <span>Order</span>
+        </h1>
+
+        <p style="color: var(--white);">
+          Fill in your order details below and send your request directly
+          to TA SERVICES through WhatsApp.
+        </p>
+
+      </div>
+
+
+      <div class="row justify-content-center">
+
+        <div class="col-xl-10">
+
+          <div class="order-container">
+
+            <div class="row g-0">
+
+              <!-- LEFT SIDE -->
+
+              <div class="col-lg-5">
+
+                <div class="order-information">
+
+                  <div class="order-logo">
+                    <img
+                      src="logo_no_r.png"
+                      alt="TA SERVICES Logo"
+                    >
+                  </div>
+
+                  <h2 style="color: var(--white); font-size: 2rem; line-height: 1.2;">
+                    Order Your Digital Service
+                  </h2>
+
+                  <p style="color: var(--white);">
+                    Choose your required service and enter the correct
+                    information. Your order will be prepared as a WhatsApp
+                    message automatically.
+                  </p>
+
+
+                  <div class="information-item">
+
+                    <div class="information-icon">
+                      <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <div>
+                      <h4 style="color: var(--white);">Fast Response</h4>
+                      <span style="color: var(--white);">
+                        We will review your order as quickly as possible.
+                      </span>
+                    </div>
+
+                  </div>
+
+
+                  <div class="information-item">
+
+                    <div class="information-icon">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div>
+                      <h4 style="color: var(--white);">Safe Services</h4>
+                      <span style="color: var(--white);">
+                        Your order information stays private and secure.
+                      </span>
+                    </div>
+
+                  </div>
+
+
+                  <div class="information-item">
+
+                    <div class="information-icon">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+
+                    <div>
+                      <h4 style="color: var(--white);">WhatsApp Order</h4>
+                      <span style="color: var(--white);">
+                        Send your complete request directly through WhatsApp.
+                      </span>
+                    </div>
+
+                  </div>
+
+
+                  <div class="available-box">
+
+                    <div class="dot"></div>
+
+                    <div>
+                      <strong>Available Now</strong>
+                      <span>Support available 24/7</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- RIGHT SIDE — ORDER FORM -->
+
+              <div class="col-lg-7">
+
+                <div class="order-form-box">
+
+                  <div class="form-title">
+
+                    <div class="form-title-icon">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+
+                    <div>
+                      <h3 style="color: var(--white);">Place Your Order</h3>
+                      <p>Please enter the correct information.</p>
+                    </div>
+
+                  </div>
+
+
+                  <form id="orderForm">
+
+                    <div class="row g-4">
+
+                      <!-- Customer Name -->
+
+                      <div class="col-md-6">
+
+                        <div class="form-group">
+
+                          <label for="customerName">
+                            Full Name
+                            <span>*</span>
+                          </label>
+
+                          <div class="input-box">
+
+                            <i class="fa-solid fa-user"></i>
+
+                            <input
+                              type="text"
+                              id="customerName"
+                              name="customerName"
+                              placeholder="Enter your full name"
+                              required
+                            >
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+
+                      <!-- Customer Phone -->
+
+                      <div class="col-md-6">
+
+                        <div class="form-group">
+
+                          <label for="customerPhone">
+                            Phone Number
+                            <span>*</span>
+                          </label>
+
+                          <div class="input-box">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <input
+                              type="tel"
+                              id="customerPhone"
+                              name="customerPhone"
+                              placeholder="Example: 81 014 978"
+                              required
+                            >
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+
+                      <!-- Main Service -->
+
+                      <div class="col-12">
+
+                        <div class="form-group">
+
+                          <label for="serviceType">
+                            Select Service
+                            <span>*</span>
+                          </label>
+
+                          <div class="input-box select-box">
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                            <select
+                              id="serviceType"
+                              name="serviceType"
+                              required
+                            >
+                              <option value="" selected disabled>
+                                Choose the service you need
+                              </option>
+
+                              <option value="social-media">
+                                Social Media Growth
+                              </option>
+
+                              <option value="game-topup">
+                                Game Top-Up
+                              </option>
+
+                              <option value="web-development">
+                                Web Development
+                              </option>
+
+                              <option value="application-subscription">
+                                Application Subscription
+                              </option>
+
+                              <option value="alfa-recharge">
+                                Alfa Recharge
+                              </option>
+
+                              <option value="mtc-recharge">
+                                MTC Touch Recharge
+                              </option>
+
+                              <option value="other-service">
+                                Other Service
+                              </option>
+                            </select>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+
+                      <!-- Dynamic service details appear here -->
+
+                      <div class="col-12">
+                        <div id="dynamicOptions" class="row g-4"></div>
+                      </div>
+
+
+                      <!-- WhatsApp Department -->
+
+                      <div class="col-md-6">
+
+                        <div class="form-group">
+
+                          <label for="whatsappDepartment">
+                            Send Order To
+                            <span>*</span>
+                          </label>
+
+                          <div class="input-box select-box">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            <select
+                              id="whatsappDepartment"
+                              name="whatsappDepartment"
+                              required
+                            >
+                              <option value="96181573590">
+                                TA SERVICES — 81 573 590
+                              </option>
+
+                              <option value="96181014978">
+                                TA SERVICES — 81 014 978
+                              </option>
+                            </select>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+
+                      <!-- Notes -->
+
+                      <div class="col-12">
+
+                        <div class="form-group">
+
+                          <label for="orderNotes">
+                            Additional Notes
+                          </label>
+
+                          <div class="textarea-box">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            <textarea
+                              id="orderNotes"
+                              name="orderNotes"
+                              rows="5"
+                              placeholder="Write any additional information about your order..."
+                            ></textarea>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+
+                      <!-- Confirmation -->
+
+                      <div class="col-12">
+
+                        <label class="confirmation-box">
+
+                          <input
+                            type="checkbox"
+                            id="confirmation"
+                            required
+                          >
+
+                          <span class="custom-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                          </span>
+
+                          <span class="confirmation-text">
+                            I confirm that all the order information entered
+                            above is correct.
+                          </span>
+
+                        </label>
+
+                      </div>
+
+
+                      <!-- Submit -->
+
+                      <div class="col-12">
+
+                        <button
+                          type="submit"
+                          class="whatsapp-order-btn"
+                        >
+                          <i class="fa-brands fa-whatsapp"></i>
+
+                          Send Order via WhatsApp
+
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                      </div>
+
+                    </div>
+
+                  </form>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="order-support">
+
+        <p>
+          Need help completing your order?
+        </p>
+
+        <a
+          href="https://wa.me/96181014978"
+          target="_blank"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Contact Our Support
+        </a>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-content">
+
+        <a href="index.html">
+          <img
+            src="logo_no_r.png"
+            class="footer-logo"
+            alt="TA SERVICES"
+          >
+        </a>
+
+        <p>
+          Fast, safe and reliable digital services.
+        </p>
+
+        <div class="footer-social">
+
+          <a
+            href="https://wa.me/96181014978"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/ta_eservices"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="copy">
+        © 2025 <span>TA SERVICES</span>. All Rights Reserved.
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Bootstrap JavaScript -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+
+  <!-- =========================
+       DYNAMIC FIELDS + WHATSAPP
+  ========================== -->
+
+  <script>
+    const orderForm = document.getElementById("orderForm");
+    const serviceTypeSelect = document.getElementById("serviceType");
+    const dynamicOptions = document.getElementById("dynamicOptions");
+
+
+    function fieldTemplate({
+      column = "col-md-6",
+      label,
+      id,
+      name,
+      icon,
+      type = "text",
+      placeholder = "",
+      required = false,
+      options = null,
+      rows = 5
+    }) {
+      const requiredMark = required ? "<span>*</span>" : "";
+      const requiredAttribute = required ? "required" : "";
+
+      let fieldHTML = "";
+
+      if (options) {
+        fieldHTML = `
+          <div class="input-box select-box">
+            <i class="${icon}"></i>
+
+            <select
+              id="${id}"
+              name="${name}"
+              data-label="${label}"
+              ${requiredAttribute}
+            >
+              <option value="" selected disabled>
+                ${placeholder}
+              </option>
+
+              ${options.map(option => `
+                <option value="${option}">${option}</option>
+              `).join("")}
+            </select>
+          </div>
+        `;
+      } else if (type === "textarea") {
+        fieldHTML = `
+          <div class="textarea-box">
+            <i class="${icon}"></i>
+
+            <textarea
+              id="${id}"
+              name="${name}"
+              data-label="${label}"
+              rows="${rows}"
+              placeholder="${placeholder}"
+              ${requiredAttribute}
+            ></textarea>
+          </div>
+        `;
+      } else {
+        const minAttribute = type === "number" ? 'min="1"' : "";
+
+        fieldHTML = `
+          <div class="input-box">
+            <i class="${icon}"></i>
+
+            <input
+              type="${type}"
+              id="${id}"
+              name="${name}"
+              data-label="${label}"
+              placeholder="${placeholder}"
+              ${minAttribute}
+              ${requiredAttribute}
+            >
+          </div>
+        `;
+      }
+
+      return `
+        <div class="${column} dynamic-field">
+          <div class="form-group">
+            <label for="${id}">
+              ${label}
+              ${requiredMark}
+            </label>
+
+            ${fieldHTML}
+          </div>
+        </div>
+      `;
+    }
+
+
+    function renderDynamicFields(service) {
+      dynamicOptions.innerHTML = "";
+
+      if (service === "social-media") {
+        dynamicOptions.innerHTML =
+          fieldTemplate({
+            label: "Social Media Platform",
+            id: "socialPlatform",
+            name: "socialPlatform",
+            icon: "fa-brands fa-instagram",
+            placeholder: "Choose social media platform",
+            required: true,
+            options: [
+              "Instagram",
+              "TikTok",
+              "Facebook",
+              "YouTube",
+              "Telegram",
+              "X / Twitter",
+              "Snapchat"
+            ]
+          }) +
+
+          fieldTemplate({
+            label: "Service Type",
+            id: "socialService",
+            name: "socialService",
+            icon: "fa-solid fa-chart-line",
+            placeholder: "Choose service type",
+            required: true,
+            options: [
+              "Followers",
+              "Likes",
+              "Views",
+              "Comments",
+              "Shares",
+              "Saves",
+              "Watch Time",
+              "Live Viewers",
+              "Subscribers"
+            ]
+          }) +
+
+          fieldTemplate({
+            column: "col-12",
+            label: "Account or Post Link",
+            id: "socialLink",
+            name: "socialLink",
+            icon: "fa-solid fa-link",
+            type: "url",
+            placeholder: "Enter account or post link",
+            required: true
+          }) +
+
+          fieldTemplate({
+            label: "Quantity",
+            id: "socialQuantity",
+            name: "socialQuantity",
+            icon: "fa-solid fa-hashtag",
+            type: "number",
+            placeholder: "Example: 1000",
+            required: true
+          });
+      }
+
+
+      else if (service === "game-topup") {
+        dynamicOptions.innerHTML =
+          fieldTemplate({
+            label: "Select Game",
+            id: "gameName",
+            name: "gameName",
+            icon: "fa-solid fa-gamepad",
+            placeholder: "Choose your game",
+            required: true,
+            options: [
+              "PUBG Mobile",
+              "Free Fire",
+              "Mobile Legends",
+              "Call of Duty Mobile",
+              "Fortnite",
+              "Roblox",
+              "Valorant",
+              "League of Legends",
+              "Clash of Clans",
+              "EA Sports FC",
+              "PlayStation",
+              "Xbox"
+            ]
+          }) +
+
+          fieldTemplate({
+            label: "Recharge Package",
+            id: "gamePackage",
+            name: "gamePackage",
+            icon: "fa-solid fa-coins",
+            placeholder: "Choose recharge package",
+            required: true,
+            options: [
+              "Small Package",
+              "Medium Package",
+              "Large Package",
+              "Custom Package"
+            ]
+          }) +
+
+          fieldTemplate({
+            label: "Player ID",
+            id: "playerId",
+            name: "playerId",
+            icon: "fa-solid fa-id-card",
+            placeholder: "Enter your Player ID",
+            required: true
+          }) +
+
+          fieldTemplate({
+            label: "Server ID",
+            id: "serverId",
+            name: "serverId",
+            icon: "fa-solid fa-server",
+            placeholder: "Enter Server ID if required"
+          });
+      }
+
+
+      else if (service === "application-subscription") {
+        dynamicOptions.innerHTML =
+          fieldTemplate({
+            label: "Application",
+            id: "applicationName",
+            name: "applicationName",
+            icon: "fa-solid fa-tv",
+            placeholder: "Choose application",
+            required: true,
+            options: [
+              "Netflix",
+              "Shahid",
+              "OSN Plus",
+              "Disney Plus",
+              "Spotify",
+              "YouTube Premium",
+              "Anghami Plus",
+              "Apple Music",
+              "Amazon Prime",
+              "Canva Pro",
+              "ChatGPT Plus",
+              "Microsoft 365"
+            ]
+          }) +
+
+          fieldTemplate({
+            label: "Subscription Duration",
+            id: "subscriptionDuration",
+            name: "subscriptionDuration",
+            icon: "fa-solid fa-calendar-days",
+            placeholder: "Choose subscription duration",
+            required: true,
+            options: [
+              "1 Month",
+              "3 Months",
+              "6 Months",
+              "12 Months"
+            ]
+          }) +
+
+          fieldTemplate({
+            label: "Account Type",
+            id: "subscriptionType",
+            name: "subscriptionType",
+            icon: "fa-solid fa-users",
+            placeholder: "Choose account type",
+            required: true,
+            options: [
+              "Private Account",
+              "Shared Account",
+              "Account Renewal",
+              "Activation Code"
+            ]
+          }) +
+
+          fieldTemplate({
+            label: "Account Email",
+            id: "subscriptionEmail",
+            name: "subscriptionEmail",
+            icon: "fa-solid fa-envelope",
+            type: "email",
+            placeholder: "Enter your account email"
+          });
+      }
+
+
+      else if (service === "web-development") {
+        dynamicOptions.innerHTML =
+          fieldTemplate({
+            label: "Website Type",
+            id: "websiteType",
+            name: "websiteType",
+            icon: "fa-solid fa-globe",
+            placeholder: "Choose website type",
+            required: true,
+            options: [
+              "Business Website",
+              "E-commerce Website",
+              "Portfolio Website",
+              "Landing Page",
+              "Blog Website",
+              "Booking Website",
+              "Custom Website"
+            ]
+          }) +
+
+          fieldTemplate({
+            label: "Number of Pages",
+            id: "websitePages",
+            name: "websitePages",
+            icon: "fa-solid fa-file",
+            placeholder: "Choose number of pages",
+            required: true,
+            options: [
+              "1 Page",
+              "2 - 5 Pages",
+              "6 - 10 Pages",
+              "More than 10 Pages"
+            ]
+          }) +
+
+          fieldTemplate({
+            column: "col-12",
+            label: "Project Details",
+            id: "websiteDetails",
+            name: "websiteDetails",
+            icon: "fa-solid fa-pen",
+            type: "textarea",
+            placeholder: "Tell us about your website",
+            required: true
+          });
+      }
+
+
+      else if (service === "alfa-recharge") {
+        dynamicOptions.innerHTML =
+          fieldTemplate({
+            label: "Alfa Phone Number",
+            id: "alfaNumber",
+            name: "alfaNumber",
+            icon: "fa-solid fa-phone",
+            type: "tel",
+            placeholder: "Example: 03 123 456",
+            required: true
+          }) +
+
+          fieldTemplate({
+            label: "Recharge Type",
+            id: "alfaService",
+            name: "alfaService",
+            icon: "fa-solid fa-sim-card",
+            placeholder: "Choose recharge type",
+            required: true,
+            options: [
+              "Credit Recharge",
+              "Internet Bundle",
+              "WhatsApp Bundle",
+              "Minutes Bundle",
+              "SMS Bundle"
+            ]
+          }) +
+
+          fieldTemplate({
+            label: "Amount",
+            id: "alfaAmount",
+            name: "alfaAmount",
+            icon: "fa-solid fa-dollar-sign",
+            type: "number",
+            placeholder: "Enter recharge amount",
+            required: true
+          });
+      }
+
+
+      else if (service === "mtc-recharge") {
+        dynamicOptions.innerHTML =
+          fieldTemplate({
+            label: "Touch Phone Number",
+            id: "touchNumber",
+            name: "touchNumber",
+            icon: "fa-solid fa-phone",
+            type: "tel",
+            placeholder: "Example: 03 123 456",
+            required: true
+          }) +
+
+          fieldTemplate({
+            label: "Recharge Type",
+            id: "touchService",
+            name: "touchService",
+            icon: "fa-solid fa-sim-card",
+            placeholder: "Choose recharge type",
+            required: true,
+            options: [
+              "Credit Recharge",
+              "Internet Bundle",
+              "WhatsApp Bundle",
+              "Minutes Bundle",
+              "SMS Bundle"
+            ]
+          }) +
+
+          fieldTemplate({
+            label: "Amount",
+            id: "touchAmount",
+            name: "touchAmount",
+            icon: "fa-solid fa-dollar-sign",
+            type: "number",
+            placeholder: "Enter recharge amount",
+            required: true
+          });
+      }
+
+
+      else if (service === "other-service") {
+        dynamicOptions.innerHTML =
+          fieldTemplate({
+            column: "col-12",
+            label: "Requested Service",
+            id: "otherServiceName",
+            name: "otherServiceName",
+            icon: "fa-solid fa-circle-question",
+            placeholder: "Write the service you need",
+            required: true
+          }) +
+
+          fieldTemplate({
+            column: "col-12",
+            label: "Service Details",
+            id: "otherServiceDetails",
+            name: "otherServiceDetails",
+            icon: "fa-solid fa-pen",
+            type: "textarea",
+            placeholder: "Explain the service you need",
+            required: true
+          });
+      }
+    }
+
+
+    serviceTypeSelect.addEventListener("change", function() {
+      renderDynamicFields(this.value);
+    });
+
+
+    orderForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      if (!orderForm.checkValidity()) {
+        orderForm.reportValidity();
+        return;
+      }
+
+      const customerName =
+        document.getElementById("customerName").value.trim();
+
+      const customerPhone =
+        document.getElementById("customerPhone").value.trim();
+
+      const whatsappNumber =
+        document.getElementById("whatsappDepartment").value;
+
+      const orderNotes =
+        document.getElementById("orderNotes").value.trim();
+
+      const selectedServiceText =
+        serviceTypeSelect.options[serviceTypeSelect.selectedIndex].text;
+
+      const dynamicFields =
+        dynamicOptions.querySelectorAll("input, select, textarea");
+
+      const dynamicDetails = [];
+
+      dynamicFields.forEach(function(field) {
+        const label = field.dataset.label || field.name;
+        const value = field.value.trim();
+
+        if (value !== "") {
+          dynamicDetails.push(`${label}:\n${value}`);
+        }
+      });
+
+      const serviceDetails =
+        dynamicDetails.length > 0
+          ? dynamicDetails.join("\n\n")
+          : "No extra details";
+
+      const finalNotes =
+        orderNotes !== ""
+          ? orderNotes
+          : "No additional notes";
+
+      const message =
+`Hello TA SERVICES 👋
+
+I would like to place a new order.
+
+━━━━━━━━━━━━━━━━━━
+🛒 NEW ORDER DETAILS
+━━━━━━━━━━━━━━━━━━
+
+👤 Customer Name:
+${customerName}
+
+📞 Customer Phone:
+${customerPhone}
+
+🛍️ Requested Service:
+${selectedServiceText}
+
+📋 Service Details:
+${serviceDetails}
+
+📝 Additional Notes:
+${finalNotes}
+
+━━━━━━━━━━━━━━━━━━
+
+Please review my order and send me the price and payment information.
+
+Thank you.`;
+
+      const encodedMessage = encodeURIComponent(message);
+
+      const whatsappURL =
+        `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+      window.open(whatsappURL, "_blank");
+    });
+  </script>
+
+</body>
+
+</html>
